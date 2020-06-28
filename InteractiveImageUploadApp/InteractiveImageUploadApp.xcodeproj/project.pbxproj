@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D758528924A115DF00E6F916 /* imageEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758528824A115DF00E6F916 /* imageEdit.swift */; };
 		D762E48E249604C5004DDEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762E48D249604C5004DDEBB /* AppDelegate.swift */; };
 		D762E490249604C5004DDEBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762E48F249604C5004DDEBB /* SceneDelegate.swift */; };
 		D762E492249604C5004DDEBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D762E491249604C5004DDEBB /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D758528824A115DF00E6F916 /* imageEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageEdit.swift; sourceTree = "<group>"; };
 		D762E48A249604C5004DDEBB /* InteractiveImageUploadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractiveImageUploadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D762E48D249604C5004DDEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D762E48F249604C5004DDEBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D758528724A115AD00E6F916 /* imageEditer */ = {
+			isa = PBXGroup;
+			children = (
+				D758528824A115DF00E6F916 /* imageEdit.swift */,
+			);
+			path = imageEditer;
+			sourceTree = "<group>";
+		};
 		D762E481249604C5004DDEBB = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		D762E48C249604C5004DDEBB /* InteractiveImageUploadApp */ = {
 			isa = PBXGroup;
 			children = (
+				D758528724A115AD00E6F916 /* imageEditer */,
 				D762E4BD2496058F004DDEBB /* ui */,
 				D762E48D249604C5004DDEBB /* AppDelegate.swift */,
 				D762E48F249604C5004DDEBB /* SceneDelegate.swift */,
@@ -277,6 +288,7 @@
 				D762E492249604C5004DDEBB /* ViewController.swift in Sources */,
 				D762E48E249604C5004DDEBB /* AppDelegate.swift in Sources */,
 				D762E4C1249605D5004DDEBB /* addingPageToServerViewController.swift in Sources */,
+				D758528924A115DF00E6F916 /* imageEdit.swift in Sources */,
 				D762E490249604C5004DDEBB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

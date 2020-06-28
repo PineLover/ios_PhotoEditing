@@ -12,7 +12,7 @@ class addingPageToServerViewController: UIViewController {
     @IBOutlet weak var imagePickerButton: UIButton!
     
     
-    
+    var imageEditor = imageEdit()
     let picker = UIImagePickerController()
 
     override func viewDidLoad() {
@@ -23,6 +23,8 @@ class addingPageToServerViewController: UIViewController {
         self.picker.sourceType = .photoLibrary
         self.picker.allowsEditing = false
         self.picker.delegate = self
+        
+        imagePickerButton.setImage( imageEditor.testRender(), for: .normal)
     }
     
 
@@ -49,7 +51,7 @@ extension addingPageToServerViewController : UINavigationControllerDelegate,UIIm
         }
         
         //imagePickerButton.imageView?.image = newImage
-        imagePickerButton.imageView?.contentMode = .scaleAspectFit
+        imagePickerButton.imageView?.contentMode = .scaleToFill
          
         imagePickerButton.setImage(newImage, for: .normal)
         picker.dismiss(animated: true)

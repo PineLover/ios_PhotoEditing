@@ -8,7 +8,7 @@
 
 import UIKit
 
-class addingPageToServerViewController: UIViewController {
+class pickImageVC: UIViewController {
     @IBOutlet weak var imagePickerButton: UIButton!
     
     
@@ -31,14 +31,20 @@ class addingPageToServerViewController: UIViewController {
     @objc func pickAndLoadImage(){
         self.present(self.picker, animated: true)
     }
-
+    
+    @IBAction func processImgBtn(_ sender: UIButton) {
+        var newImage : UIImage? = nil
+        newImage = imagePickerButton.currentImage
+        imagePickerButton.setImage(imageEditor.processPixels(in: newImage!), for: .normal)
+    }
+    
 }
 
-extension addingPageToServerViewController : UINavigationControllerDelegate,UIImagePickerControllerDelegate{
+extension pickImageVC : UINavigationControllerDelegate,UIImagePickerControllerDelegate{
  
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         var newImage: UIImage? = nil
-        print("in imagePickerController")
+        
         if let possibleImage = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage{
             newImage = possibleImage
             print("edited image")

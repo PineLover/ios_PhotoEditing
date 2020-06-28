@@ -101,7 +101,7 @@ extension imageEdit {
         }
 
         let pixelBuffer = buffer.bindMemory(to: RGBA32.self, capacity: width * height)
-        var mosaicSize : Int = 10
+        var mosaicSize : Int = 30
 
         for row in 0 ..< Int(height) / mosaicSize {
             for column in 0 ..< Int(width) / mosaicSize {
